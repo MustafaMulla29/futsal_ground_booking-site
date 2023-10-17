@@ -1,0 +1,409 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.justify-start{
+    justify-content: flex-start;
+}
+
+.px-1{
+    padding: 0px 10px;
+}
+
+.px-2{
+    padding: 0 15px;
+}
+
+.p-1{
+    padding: 10px 15px;
+}
+.py-1{
+    padding: 8px 0;
+}
+.py-2{
+    padding: 15px 0;
+}
+
+.mx-1{
+    margin: 0 10px;
+}
+
+.mx-2{
+    margin: 0 15px;
+}
+.my-1{
+    margin: 10px 0px;
+}
+.m-1{
+    margin: 10px 15px;
+}
+.my-2{
+    margin: 15px 0;
+}
+.container{
+    width: 80%;
+}
+
+li{
+    list-style: none;
+    margin: 2px 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li a{
+    color: black;
+}
+
+li a:hover{
+    text-decoration: underline;
+    transition: all 0.2s linear;
+    text-underline-offset: 6px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.h-4{
+    height: 60px;
+}
+
+.hero{
+    height: 78vh;
+}
+
+.text-sm{
+    font-size: 16px;
+}
+
+.text-xl
+{
+    font-size: 24px;
+}
+
+.text-2xl{
+    font-size: 46px;
+}
+
+.hero::after{
+    background: url('../img/falaq-lazuardi-qZWMMkvesc4-unsplash.jpg') no-repeat center/cover;
+    /* background: url('../img/Mini-Pitch-at-Duckrey-Tanner-School-Philadelphia-PA.jpg') no-repeat center/cover; */
+    content: "";
+    filter: blur(3px);
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+#booking-btn{
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.h-100vh{
+    height: 100vh;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.z-0{
+    z-index: 0;
+}
+
+.z-1{
+    z-index: 1;
+}
+
+.booking-cards{
+    margin: 60px 0;
+}
+
+.booking-cards h1{
+    font-size: 34px;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+#nav-section{
+    transition: background 0.1s linear;
+    padding: 12px 0;
+}
+
+button{
+    padding: 8px 10px;
+    border-radius: 2px;
+    background-color: #1565c0;
+    border: none;
+    cursor: pointer;
+}
+
+button a{
+    color: white;
+}
+
+button:hover{
+    transform: scale(0.9);
+    background-color: #154174;
+    transition: all 0.2s ease-in-out;
+}
+
+.h-100{
+    height: 100vh;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.items-start{
+    align-items: flex-start;
+}
+
+.text-lg{
+    font-size: 18px;
+}
+
+.gap-1{
+    gap: 0.5rem;
+}
+.gap-64{
+    gap: 64rem;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.login-form{
+    width: 25%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.login-form h1{
+    font-size: 40px;
+}
+
+.text-white{
+    color: white;
+}
+
+.img-div{
+    height: 95%;
+    width: 50%;
+    background: url('../img/futsal1.jpg') no-repeat center/cover;
+    border-radius: 10px;
+}
+
+input, select{
+    outline-color: #1565c0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.my-3{
+ margin: 20px 0;   
+}
+
+nav ul{
+    transition: all 0.3s ease;
+    justify-content: flex-end;
+}
+.card-head img{
+    width: 100%;
+    /* position: absolute; */
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.card-head{
+    height: 200px;
+    /* position: relative; */
+}
+.gap-4{
+    gap: 4rem;
+}
+
+.card{
+    width: 30%;
+    box-shadow: 0px 4px 14px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.card button{
+    width: 93%;
+    margin: 15px 10px;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+}
+p{
+    text-align: justify;
+}
+.card-span{
+    margin: 0 6px;
+    padding: 5px 8px;
+    background-color: #eed8c7;
+    border-radius: 32px;
+    font-size: 13px;
+}
+
+.bg-light-blue{
+    background-color: #88c7e9;
+}
+
+.bg-light-gray{
+    background-color: #eee8e3;
+}
+
+footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.footer-bg{
+    background-color: #ededed;
+}
+
+.ground-container{
+    width: 50%;
+}
+
+#booking-form{
+    margin-bottom: 15px;
+}
+
+#logo-img{
+    width: 7%;
+}
+.bg-wheat{
+    background-color: wheat;
+}
+table{
+    width: 100%;
+}
+
+.form-container{
+    width: 40%;
+    padding: 0px 20px;
+    margin: 0 10px;
+}
+
+input[name="price"], input[name="to"], input[name="00"]{
+    background-color: #d7f1ff7a;
+    border: 1px solid #1565c0;
+    outline: none;
+}
+
+.text-black{
+    color: black;
+}
+a:hover{
+    color: #1565c0;
+}
+
+.thankYou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h1, h2, h3, h4, table, tr, th, td{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Young Serif', serif;
+}
+
+p,a,span, button{
+    font-family: 'Poppins', sans-serif; 
+}
+
+input, label,option, ::placeholder{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.timings span{
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.w-50{
+    width: 50%;
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.font-900{
+    font-weight: 900;
+}

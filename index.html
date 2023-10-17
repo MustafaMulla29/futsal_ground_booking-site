@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futsal Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300;400&family=Poppins:wght@300&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="nav-section" class=" sticky">
+        <nav class="flex justify-between container m-auto ">
+            <div id="logo-img">
+                <span><a href="#"><img src="./img/dbclogo.png" class="w-100" alt=""></a></span>
+            </div>
+            <div class="hamburger">
+                <span><img src="./img/menu.svg" alt=""></span>
+            </div>
+            <ul class="flex">
+                <li class="close"><span><img src="./img/x.svg" alt=""></span></li>
+                <li class="px-2"><a class="nav-links text-white py-1" href="#">Home</a></li>
+                <li class="px-2"><a class="nav-links text-white py-1" href="#">About</a></li>
+                <li class="px-2"><a class="nav-links text-white py-1" href="#footer">Contact</a></li>
+                <li class=""><a href="pages/login.html"><button class="text-white ">Login</button></a></li>
+                <li class=""><a href="pages/signup.html"><button class="text-white">Signup</button></a></li>
+            </ul>
+        </nav>
+    </section>
+    <div>
+        <section class="hero flex justify-center">
+            <div class="relative z-1">
+                <div class="flex justify-center flex-col">
+                    <h2 class="text-center my-1 py-2 text-2xl text-white">Unleash Your Futsal Passion on Premier
+                        Pitches!</h2>
+                    <a href="#booking"><button class="text-white my-2" id="booking-btn">Book now</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="booking-cards ">
+        <h1 class="text-center my-3">Book the ground</h1>
+        <div class="container m-auto flex justify-center gap-4">
+            <div class="card my-3">
+                <div class="card-head" id="booking"><img src="./img/futsal.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <h2 class="my-1 px-1">Futsal ground</h2>
+                    <div class="my-2">
+                        <span class="card-span">5 A Side</span>
+                        <span class="card-span  bg-light-blue">9 A Side</span>
+                        <span class="card-span bg-light-gray">11 A Side</span>
+                    </div>
+                    <p class="my-1 px-1">Book the futsal ground of Don Bosco College Panjim</p>
+                    <a href="pages/booking.html">
+                        <button class="text-white ">See More...</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" fixed">
+        <div>
+            <button id="top-btn" type="button" class="text-white">Top</button>
+        </div>
+    </section>
+    <section class="footer-bg" id="footer">
+        <footer>
+            <div><span>&copy;All right reservered Don Bosco College Panjim 2023</span></div>
+            <div class="contact-div">
+                <span>
+                    <a class="text-black" href="mailto:info@donboscogoa.ac.in">
+                        Email : info@donboscogoa.ac.in
+                    </a>
+                </span>
+                <span>
+                    <p>Tel : + 12568496574</p>
+                </span>
+            </div>
+
+            <div class="flex  justify-center gap-1">
+                <div>
+                    <a href="#">
+                        <img src="./img/instagram-logo.svg" alt="instagram">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/facebook-logo.svg" alt="facebook">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>

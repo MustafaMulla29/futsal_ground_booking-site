@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book the ground</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300;400&family=Poppins:wght@300&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="my-3">
+        <div class="container m-auto p-1"><a href="../index.html" class="py-1 px-1 text-black">Back</a></div>
+    </section>
+    <section>
+        <div>
+            <div class="container booking-container m-auto flex justify-between items-start">
+                <div class="ground-container">
+                    <div class="bg-wheat">
+                        <img src="../img/pitch.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="head-section my-2 flex justify-between">
+                            <h2 class="my-1">Futsal ground</h2>
+                            <div>
+                                <span class="card-span card-five">5 A Side</span>
+                                <span class="card-span  bg-light-blue">9 A Side</span>
+                                <span class="card-span bg-light-gray">11 A Side</span>
+                            </div>
+                        </div>
+                        <p class="my-1 ">Experience the thrill of fast-paced futsal on our top-notch pitches! We offer a
+                            variety of options to suit your game, with grounds designed for 5, 9, and 11-a-side matches.
+                            Whether you're a seasoned pro or just looking for some fun, we have the perfect pitch for
+                            you.
+                        </p>
+                        <p class="my-1 ">Timings: 8 - 12 PM &nbsp;&nbsp; | &nbsp;&nbsp; 3 - 6 PM</p>
+                        <div class="my-3">
+                            <table class="my-2">
+                                <h3 class="">Pricing in RS</h3>
+                                <tr bgcolor="#758a9c">
+                                    <th></th>
+                                    <th>5 A Side</th>
+                                    <th>9 A Side</th>
+                                    <th>11 A Side</th>
+                                </tr>
+                                <tr bgcolor="antiquewhite">
+                                    <td class="font-900">
+                                        8 - 12 PM
+                                    </td>
+                                    <td>500</td>
+                                    <td>1000</td>
+                                    <td>1200</td>
+                                </tr>
+                                <tr bgcolor="#d1eaff">
+                                    <td class="font-900">
+                                        3 - 6 PM
+                                    </td>
+                                    <td>800</td>
+                                    <td>1200</td>
+                                    <td>1500</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <h2>Booking form</h2>
+                    <form action="" id="booking-form">
+                        <div class="flex items-start justify-center gap-1 flex-col my-3">
+                            <label for="name">Name</label>
+                            <input type="text" class="p-1 w-100" placeholder="Enter your name" required>
+                        </div>
+                        <div class="flex items-start justify-center gap-1 flex-col my-3">
+                            <label for="phone">Phone</label>
+                            <input type="text" class="p-1 w-100" maxlength="10" placeholder="Enter your phone number"
+                                required>
+                        </div>
+                        <div class="flex items-start justify-center gap-1 flex-col my-3">
+                            <label for="date">Date</label>
+                            <input type="date" class="p-1 w-100" name="date" placeholder="Select the date" required>
+                        </div>
+                        <div class="flex items-start justify-center gap-1 flex-col my-3">
+                            <div class="w-100 items-start  flex justify-center gap-1 flex-col my-1">
+                                <label for="">Select</label>
+                                <select name="" id="am-pm-select" class="p-1 w-100">
+                                    <option value="am">AM</option>
+                                    <option value="pm">PM</option>
+                                </select>
+                            </div>
+                            <div class="w-100 items-start  flex justify-center gap-1 flex-col">
+                                <label for="from" class="">From </label>
+                                <div class="flex justify-center gap-1 timings w-100">
+                                    <input type="text" required maxlength="2" autocomplete="off" minlength="1"
+                                        id="time-from" name="from" class="p-1 w-50 text-center">
+                                    <span>:</span>
+                                    <input type="text" readonly class="p-1 w-50 text-center" value="00">
+                                </div>
+                            </div>
+
+                            <div class="w-100 items-start flex justify-center gap-1 flex-col">
+                                <label for="to" class="">To </label>
+                                <div class="flex justify-center gap-1 timings w-100">
+                                    <input type="text" value="N/A" id="time-to" autocomplete="off" name="to" readonly
+                                        class="p-1 w-50 text-center">
+                                    <span>:</span>
+                                    <input type="text" name="00" value="00" readonly class="p-1 w-50 text-center">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-center gap-1 flex-col my-3">
+                            <label for="grounds">Select the ground</label>
+                            <select name="grounds" class="p-1 w-100" id="grounds" required>
+                                <option value="0" class="p-1" selected>Select</option>
+                                <option value="5" class="p-1">5 A Side</option>
+                                <option value="9" class="p-1">9 A Side</option>
+                                <option value="11" class="p-1">11 A Side</option>
+                            </select>
+                        </div>
+                        <div class="flex items-start justify-center gap-1 flex-col my-3">
+                            <label for="phone">Price</label>
+                            <input type="text" value="N/A" name="price" class="p-1 w-100" readonly placeholder="">
+                        </div>
+                        <div>
+                            <button class="w-100 text-center text-white" type="submit">Book</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../script.js"></script>
+
+</html>

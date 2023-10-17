@@ -1,0 +1,204 @@
+/* responsive hamber menu for mobile phone */
+@media only screen and (min-width: 275px) {
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        top: -400px;
+        left: 0;
+        background-color: #b7b6b6;
+        z-index: 999999999999;
+    }
+    nav ul li{
+        margin-top: 8px ;
+        margin-bottom: 8px;
+    }
+    .hero h2{
+        width: 90%;
+        margin: auto;
+        font-size: 32px;
+    }
+    .hero p{
+        width: 90%;
+        margin: auto;
+        font-size: 15px;
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
+
+    .fixed{
+        right: 2rem;
+    }
+    .booking-cards h1 {
+        font-size: 27px;
+    }
+    .card{
+        width: 100%;
+    }
+    .card-five{
+        margin-left: 0;
+    }
+    .card-span{
+        font-size: 11px;
+    }
+
+    .card-body h1{
+        font-size: 19px;
+    }
+
+    .booking-container{
+        flex-direction: column;
+    }
+
+    .ground-container{
+        width: 100%;
+    }
+    .head-section{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .head-section h2{
+        font-size: 22px;
+    }
+    .head-section div{
+        display: flex;
+    }
+
+    table, th, tr,td{
+        font-size: 13px;
+    }
+
+    .form-container{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .thankYou{
+        padding: 0 10px;
+    }
+    .thankYou p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .img-div{
+        display: none;
+    }
+    .login-form{
+        width: 60%;
+    }
+    #logo-img {
+        width: 15%;
+    }
+    .contact-div{
+        margin: 10px 0;
+    }
+    footer {
+        width: 84%;
+    }
+    #booking-btn{
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (min-width: 535px){
+    .booking-cards h1 {
+        font-size: 29px;
+    }
+    .card{
+        width: 450px;
+    }
+    .card-span{
+        font-size: 14px;
+    }
+
+    .card-body h1{
+        font-size: 22spx;
+    }
+    .thankYou p{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 740px){
+    nav ul{
+        flex-direction: row !important;
+        position: relative !important;
+        top: 0 !important;
+        background-color: transparent !important;
+    }
+    nav ul li{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .hamburger{
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+
+    footer{
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .hero h2{
+        font-size: 41px;
+    }
+    #logo-img {
+        width: 9%;
+    }
+    #booking-btn{
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (min-width: 860px){
+    .booking-container{
+        flex-direction: row;
+        /* width: 90%; */
+    }
+    .form-container{
+        width: 50%;
+       margin: 0 10px;
+    }
+    .head-section{
+        flex-direction: row;
+        align-items: center;
+    }
+    .head-section h2{
+        font-size: 23px;
+    }
+    table, th, tr,td{
+        font-size: 16px;
+    }
+    .img-div{
+        display: flex;
+    }
+    .login-form{
+        width: 25%;
+    }
+    #logo-img {
+        width: 7%;
+    }
+    .fixed{
+        right: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .hero h2{
+        width: 80%;
+        font-size: 51px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+}
